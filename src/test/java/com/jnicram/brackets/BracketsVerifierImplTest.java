@@ -43,7 +43,7 @@ public class BracketsVerifierImplTest {
     }
 
     @Test
-    public void shouldReturnTrueStringWhenEmptyStringGiven() {
+    public void shouldReturnsTrueWhenGivenStringContainsProperBracketsOrder() {
         // given
 
         // when

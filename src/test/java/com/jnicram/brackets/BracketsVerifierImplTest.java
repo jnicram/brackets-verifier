@@ -11,14 +11,14 @@ import java.util.Arrays;
 import java.util.Collection;
 
 @RunWith(Parameterized.class)
-public class BracketsVerifierTest {
+public class BracketsVerifierImplTest {
 
     private final String data;
     private final VerifyResult dataResult;
 
-    private BracketsVerifier classUnderTest;
+    private BracketsVerifierImpl classUnderTest;
 
-    public BracketsVerifierTest(String data, VerifyResult dataResult) {
+    public BracketsVerifierImplTest(String data, VerifyResult dataResult) {
         this.data = data;
         this.dataResult = dataResult;
     }
@@ -39,7 +39,7 @@ public class BracketsVerifierTest {
 
     @Before
     public void init() {
-        classUnderTest = new BracketsVerifier();
+        classUnderTest = new BracketsVerifierImpl();
     }
 
     @Test
